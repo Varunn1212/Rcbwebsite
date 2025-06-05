@@ -97,5 +97,14 @@
       document.getElementById('bg-music').pause();
     }
   </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("bg-music");
+    document.body.addEventListener("click", () => {
+      audio.play().catch(e => console.log("Autoplay blocked:", e));
+    }, { once: true });
+  });
+</script>
+
 </body>
 </html>

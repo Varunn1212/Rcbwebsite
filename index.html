@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>This is for RCB Fans - Champions of IPL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Segoe+UI:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="firework"></div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="A_Thousand_Years-528635-mobiles24 (1).mp3" type="audio/mpeg" />
+  </audio>
+
+  <div id="popup-overlay">
+    <h2>Are you an RCB Fan? 🏏❤️💛</h2>
+    <button onclick="acceptFan()">Yes, I Am!</button>
+    <button onclick="declineFan()">No, I'm Not</button>
+  </div>
+
+  <div id="main-content">
+    <header>
+      <h1>Finally...Wait is Over❤️💛</h1>
+      <p>We are Champions ipl 2025 🏆 — Ee Sala Cup Namdu!!</p>
+    </header>
+
+    <div class="hero">
+      <img src="images/ipl-trophy.webp" alt="RCB Trophy Celebration" />
+    </div>
+
+    <h2 class="section-title">Glorious Moments</h2>
+    <div class="gallery">
+      <img src="images/viratwithcup.jpg" alt="Virat Holding Trophy" />
+      <img src="images/fans.jpeg" alt="RCB Fans in Stadium" />
+      <img src="images/abd.jpg" alt="Team Celebration" />
+      <img src="images/celebration.jpg" alt="Victory Fireworks" />
+      <img src="images/virat1.jpg" alt="Stadium Lights" />
+      <img src="images/virat-emotional.webp" alt="Emotional Virat Kohli" />
+    </div>
+
+    <h2 class="section-title">Highlights</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Captain's Glory</h3>
+        <p>
+          Virat Kohli lifts the trophy with tears of pride and joy. A decade of dreams,
+          fulfilled.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Fans' Power</h3>
+        <p>
+          The Chinnaswamy roars! The 12th man stood strong till the end — RCB fans,
+          you made it happen!
+        </p>
+      </div>
+      <div class="card">
+        <h3>Unforgettable Finale</h3>
+        <p>
+          RCB dominated the final with passion and perfection. A game that made history!
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Made with ❤️ by <span>Varun Rajput</span> | “Ee Sala Cup Namdu” Forever!
+      </p>
+      <div class="social-icons">
+        <a href="#https://www.instagram.com/thakur__varun__08?igsh=MWI4anE0OGJwNW9yeg=="
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function acceptFan() {
+      document.getElementById('popup-overlay').style.display = 'none';
+      document.getElementById('main-content').style.display = 'block';
+      alert('Welcome Sir 🙏 Ee Sala Cup Namde!');
+    }
+    function declineFan() {
+      document.getElementById('popup-overlay').innerHTML =
+        "<h2>Thank you 🙏<br>Your destination ends here.</h2>";
+      document.getElementById('bg-music').pause();
+    }
+  </script>
+</body>
+</html>
